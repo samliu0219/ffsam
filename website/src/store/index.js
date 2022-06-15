@@ -8,6 +8,10 @@ export default createStore({
   mutations: {
     'connecting' () {
       console.log('正在连接')
+    },
+    SOCKET_CONNECT (state) {
+      state.connected = '#19be6b'
+      console.log('SOCKET_CONNECT')
     }
   },
   actions: {

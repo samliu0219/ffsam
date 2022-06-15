@@ -6,7 +6,7 @@ import VueSocketIO from 'vue-socket.io'
 
 createApp(App).use(new VueSocketIO({
   debug: true,
-  connection: 'http://127.0.0.1:5000',
+  connection: 'http://127.0.0.1',
   vuex: {
     store,
     actionPrefix: 'SOCKET_',
